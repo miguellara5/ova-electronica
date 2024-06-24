@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leyes de Kirchhoff</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="text-center my-4">
+            <h1>Leyes de Kirchhoff</h1>
+            <nav class="nav justify-content-center">
+                <a class="nav-link" href="analisis_circuitos.html">Regresar</a>
+            </nav>
+        </header>
+        <main class="text-center">
+            <section class="my-4">
+                <h2>2.4. Leyes de Kirchhoff</h2>
+                <p>Las Leyes de Kirchhoff son dos reglas fundamentales para el análisis de circuitos eléctricos, especialmente cuando los circuitos son más complejos y contienen múltiples componentes.</p>
+                
+                <h3>2.4.1. Ley de Corrientes de Kirchhoff (LCK)</h3>
+                <p>También conocida como la Ley de Kirchhoff de las Corrientes (KCL), establece que la suma de las corrientes que entran a un nodo (un punto de conexión en un circuito) es igual a la suma de las corrientes que salen del nodo. En otras palabras, la corriente total que entra en un punto es igual a la corriente total que sale de ese punto:</p>
+                <p class="font-weight-bold">∑ I<sub>entrante</sub> = ∑ I<sub>saliente</sub></p>
+                <img src="https://example.com/ley_corrientes_kirchhoff.jpg" alt="Ley de Corrientes de Kirchhoff" class="img-fluid my-2">
+                <p>Esta ley es crucial para el análisis de circuitos complejos porque ayuda a determinar cómo se distribuyen las corrientes en diferentes ramas del circuito.</p>
+
+                <h3>2.4.2. Ley de Voltajes de Kirchhoff (LVK)</h3>
+                <p>También conocida como la Ley de Kirchhoff de los Voltajes (KVL), establece que la suma de todas las diferencias de potencial (voltajes) alrededor de cualquier lazo cerrado en un circuito es igual a cero. Esto significa que la energía total ganada debe ser igual a la energía total perdida a lo largo de un recorrido cerrado:</p>
+                <p class="font-weight-bold">∑ V = 0</p>
+                <img src="https://example.com/ley_voltajes_kirchhoff.jpg" alt="Ley de Voltajes de Kirchhoff" class="img-fluid my-2">
+                <p>Esta ley es fundamental para el análisis de mallas y lazos en un circuito, permitiendo calcular las caídas de voltaje en los componentes del circuito.</p>
+
+                <h3>Aplicaciones de las Leyes de Kirchhoff</h3>
+                <p>Las Leyes de Kirchhoff son utilizadas en diversas aplicaciones, incluyendo:</p>
+                <ul class="text-left">
+                    <li><strong>Análisis de Circuitos Complejos:</strong> Permiten descomponer circuitos complejos en partes más manejables para análisis.</li>
+                    <li><strong>Diseño de Sistemas Eléctricos:</strong> Utilizadas en el diseño y optimización de sistemas eléctricos, como redes de distribución de energía.</li>
+                    <li><strong>Resolución de Circuitos en DC y AC:</strong> Fundamentales para el análisis de circuitos en corriente continua (DC) y alterna (AC).</li>
+                </ul>
+                <img src="https://example.com/aplicaciones_kirchhoff.jpg" alt="Aplicaciones de las Leyes de Kirchhoff" class="img-fluid my-2">
+
+                <h3>Ejemplo Práctico</h3>
+                <p>Consideremos un circuito sencillo con un nodo donde confluyen tres corrientes: I1 = 3 A entrando, I2 = 2 A saliendo, e I3 desconocida. Aplicando la Ley de Corrientes de Kirchhoff:</p>
+                <p class="font-weight-bold">I<sub>1</sub> = I<sub>2</sub> + I<sub>3</sub></p>
+                <p>3 A = 2 A + I<sub>3</sub></p>
+                <p>I<sub>3</sub> = 1 A (saliente)</p>
+                <img src="https://example.com/ejemplo_kcl.jpg" alt="Ejemplo Ley de Corrientes de Kirchhoff" class="img-fluid my-2">
+
+                <p>En un lazo cerrado con dos resistencias y una fuente de voltaje de 10 V, donde las resistencias son R1 = 2 Ω y R2 = 3 Ω, aplicando la Ley de Voltajes de Kirchhoff:</p>
+                <p class="font-weight-bold">-10 V + V<sub>R1</sub> + V<sub>R2</sub> = 0</p>
+                <p>Si la corriente I es la misma en todo el lazo, entonces V<sub>R1</sub> = I × R1 y V<sub>R2</sub> = I × R2:</p>
+                <p>-10 V + 2Ω × I + 3Ω × I = 0</p>
+                <p>-10 V + 5Ω × I = 0</p>
+                <p>I = 2 A</p>
+                <img src="https://example.com/ejemplo_kvl.jpg" alt="Ejemplo Ley de Voltajes de Kirchhoff" class="img-fluid my-2">
+
+                <h3>Conclusión</h3>
+                <p>Las Leyes de Kirchhoff son esenciales para el análisis de circuitos eléctricos complejos. Comprender y aplicar estas leyes es fundamental para el diseño y resolución de circuitos en diversas aplicaciones de ingeniería eléctrica.</p>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

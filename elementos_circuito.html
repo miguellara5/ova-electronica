@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos de un Circuito Eléctrico</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="text-center my-4">
+            <h1>Elementos de un Circuito Eléctrico</h1>
+            <nav class="nav justify-content-center">
+                <a class="nav-link" href="analisis_circuitos.html">Regresar</a>
+            </nav>
+        </header>
+        <main class="text-center">
+            <!-- Sección de Fuentes de Energía Eléctrica -->
+            <section class="my-4">
+                <h2>Fuentes de Energía Eléctrica</h2>
+
+                <h3>1. Fuentes de Voltaje Independientes</h3>
+                <p>Una fuente de voltaje independiente proporciona un voltaje constante que no cambia sin importar lo que ocurra en el circuito. Ejemplos comunes son las baterías y los adaptadores de corriente de los dispositivos electrónicos.</p>
+
+                <h3>2. Fuentes de Corriente Independientes</h3>
+                <p>Una fuente de corriente independiente proporciona una corriente constante sin importar la resistencia en el circuito. Un ejemplo práctico es un generador de corriente utilizado en algunos equipos de laboratorio.</p>
+
+                <h3>3. Fuentes de Voltaje Dependientes</h3>
+                <p>Una fuente de voltaje dependiente suministra un voltaje que varía según una señal en el circuito. Se simboliza con un diamante en los diagramas de circuitos y es común en amplificadores, donde el voltaje de salida depende del voltaje de entrada.</p>
+
+                <h3>4. Fuentes de Corriente Dependientes</h3>
+                <p>Una fuente de corriente dependiente proporciona una corriente que varía según otra señal en el circuito. Es útil en circuitos de transistores, donde la corriente de salida depende de la corriente de entrada.</p>
+            </section>
+
+            <!-- Sección de Componentes Pasivos -->
+            <section class="my-4">
+                <h2>Componentes Pasivos</h2>
+
+                <h3>1. Resistores</h3>
+                <p>Los resistores limitan el flujo de corriente en un circuito y disipan energía en forma de calor. Se utilizan para proteger otros componentes y controlar los niveles de corriente y voltaje. Están disponibles en diferentes valores de resistencia y potencias.</p>
+
+                <h3>2. Capacitores</h3>
+                <p>Los capacitores almacenan energía en un campo eléctrico y pueden liberar esta energía cuando es necesario. Se utilizan para suavizar las fluctuaciones de voltaje, filtrar señales y en aplicaciones de temporización. Los capacitores vienen en diferentes tamaños y capacidades.</p>
+
+                <h3>3. Inductores</h3>
+                <p>Los inductores almacenan energía en un campo magnético cuando pasa corriente a través de ellos. Se utilizan en filtros, en circuitos de radiofrecuencia y para controlar corrientes rápidas. Los inductores pueden ser simples bobinas de alambre o componentes más complejos.</p>
+            </section>
+
+            <!-- Sección de Elementos de Conexión -->
+            <section class="my-4">
+                <h2>Elementos de Conexión</h2>
+
+                <h3>1. Conectores</h3>
+                <p>Los conectores permiten unir diferentes partes de un circuito de manera segura y removible. Pueden ser enchufes, terminales, o bloques de conexión. Son esenciales para ensamblar y desensamblar circuitos sin soldadura permanente.</p>
+
+                <h3>2. Interruptores</h3>
+                <p>Los interruptores controlan el flujo de corriente en un circuito, permitiendo abrir (cortar) o cerrar (conectar) el circuito. Existen muchos tipos de interruptores, desde los más simples que solo tienen dos posiciones (encendido/apagado) hasta interruptores más complejos con múltiples posiciones.</p>
+
+                <h3>3. Fusibles y Protectores</h3>
+                <p>Los fusibles y protectores se utilizan para proteger el circuito de sobrecorrientes y cortocircuitos. Un fusible se funde y corta el flujo de corriente si ésta supera un nivel seguro, evitando daños en el circuito. Los protectores pueden restablecerse automáticamente o manualmente después de eliminar la causa de la sobrecorriente.</p>
+            </section>
+
+            <!-- Sección de Carrusel de Imágenes -->
+            <section class="my-4">
+                <h2>Material de apoyo</h2>
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://i.pinimg.com/originals/8f/a9/ba/8fa9bad397bc9b9b86507b9d75d8eaf9.png" class="d-block w-100" alt="Imagen 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVxuxUhEbZz6BKQDxtepNS7eS_1Oq8a8B5Gg&s" class="d-block w-100" alt="Imagen 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.ecured.cu/images/4/43/Circuito_electrico.jpg" class="d-block w-100" alt="Imagen 3">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Siguiente</span>
+                    </a>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
