@@ -6,6 +6,102 @@
     <title>Conceptos Fundamentales</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            animation: fadeInDown 1s ease-out;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+
+        .nav-link {
+            color: #007bff !important;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .nav-link:hover {
+            color: #0056b3 !important;
+        }
+
+        section {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin-bottom: 40px;
+            animation: zoomIn 0.5s ease-out;
+        }
+
+        h2, h3, h4 {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-out;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -15,55 +111,68 @@
                 <a class="nav-link" href="definiciones.html">Regresar</a>
             </nav>
         </header>
-        <main class="text-center">
+        <main>
             <section class="my-4">
                 <h2>Conceptos Fundamentales en los Circuitos Eléctricos</h2>
                 <p>Los conceptos fundamentales en los circuitos eléctricos incluyen voltaje, corriente, resistencia, potencia, entre otros...</p>
-                <!-- Más información detallada aquí -->
 
-                <h1>Conceptos Fundamentales</h1>
+                <div class="concepto">
+                    <h2>Carga Eléctrica</h2>
+                    <p>
+                        La carga eléctrica es una propiedad de las partículas subatómicas como protones y electrones. Los protones tienen carga positiva y los electrones carga negativa. Esta propiedad hace que las partículas se atraigan o se repelan entre sí. La carga se mide en culombios (C), y un electrón tiene una carga de aproximadamente 1.602×10<sup>−19</sup> C. La carga eléctrica no se crea ni se destruye, solo se transfiere de un objeto a otro.
+                    </p>
+                    <img src="images/1.png" alt="Carga Eléctrica">
+                </div>
 
-                <br>
-    <h2>Carga Eléctrica</h2>
-    <p>
-        La carga eléctrica es una propiedad de las partículas subatómicas como protones y electrones. Los protones tienen carga positiva y los electrones carga negativa. Esta propiedad hace que las partículas se atraigan o se repelan entre sí. La carga se mide en culombios (C), y un electrón tiene una carga de aproximadamente 1.602×10<sup>−19</sup> C. La carga eléctrica no se crea ni se destruye, solo se transfiere de un objeto a otro.
-    </p>
-    <img src="images/1.png" class="card-img-top" alt="Definiciones y Leyes" style="height: 20%; width: 20%;">
-    <br>
-    <h2>Corriente Eléctrica</h2>
-    <p>
-        La corriente eléctrica es el flujo de cargas eléctricas a través de un material conductor, como un alambre. Se mide en amperios (A). Un amperio es la cantidad de carga que pasa por un punto en un segundo. La corriente puede ser continua (CC) si fluye en una sola dirección, o alterna (CA) si cambia de dirección periódicamente.
-    </p>
-    <img src="images/2.png" class="card-img-top" alt="Definiciones y Leyes" style="height: 20%; width: 20%;">
-    <br>
-    <h2>Voltaje (Diferencia de Potencial)</h2>
-    <p>
-        El voltaje es la diferencia de potencial eléctrico entre dos puntos. Es lo que impulsa a las cargas eléctricas a moverse en un circuito, similar a cómo la presión impulsa el agua a través de una tubería. Se mide en voltios (V). Un voltio es la cantidad de energía necesaria para mover un coulomb de carga a través de un circuito.
-    </p>
-    <img src="images/4.png" class="card-img-top" alt="Definiciones y Leyes" style="height: 20%; width: 20%;">
-    <br>
-    <h2>Resistencia Eléctrica</h2>
-    <p>
-        La resistencia eléctrica es la oposición al flujo de corriente en un material. Se mide en ohmios (Ω). Un material con alta resistencia dificulta el paso de la corriente, mientras que un material con baja resistencia permite que la corriente fluya fácilmente. La resistencia depende del material, su tamaño y temperatura.
-    </p>
-    <img src="images/4.png" class="card-img-top" alt="Definiciones y Leyes" style="height: 20%; width: 20%;">
-    <br>
-    <h2>Potencia Eléctrica</h2>
-    <p>
-        La potencia eléctrica es la cantidad de energía que se consume o se produce en un dispositivo eléctrico por unidad de tiempo. Se mide en vatios (W). Un vatio es la cantidad de energía usada por un dispositivo cuando una corriente de un amperio fluye con un voltaje de un voltio. La fórmula básica es: P = V × I donde P es la potencia, V es el voltaje, e I es la corriente.
-    </p>
-    <img src="images/5.png" class="card-img-top" alt="Definiciones y Leyes" style="height: 20%; width: 20%;">
-    <br>
-    <h2>Energía Eléctrica</h2>
-    <p>
-        La energía eléctrica es la capacidad de realizar trabajo mediante la electricidad. Se mide en julios (J) o en kilovatios-hora (kWh) para aplicaciones prácticas. La energía eléctrica se utiliza para alimentar dispositivos como luces, motores y electrodomésticos. La fórmula para calcular la energía es: E = P × t donde E es la energía, P es la potencia, y t es el tiempo.
-    </p>
-    <img src="images/6.png" class="card-img-top" alt="Definiciones y Leyes " style="height: 20%; width: 20%;">
-    <br>
-    <p>Estos conceptos básicos forman la base de la comprensión de la electrónica y los circuitos eléctricos.</p>
+                <div class="concepto">
+                    <h2>Corriente Eléctrica</h2>
+                    <p>
+                        La corriente eléctrica es el flujo de cargas eléctricas a través de un material conductor, como un alambre. Se mide en amperios (A). Un amperio es la cantidad de carga que pasa por un punto en un segundo. La corriente puede ser continua (CC) si fluye en una sola dirección, o alterna (CA) si cambia de dirección periódicamente.
+                    </p>
+                    <img src="images/2.png" alt="Corriente Eléctrica">
+                </div>
+
+                <div class="concepto">
+                    <h2>Voltaje (Diferencia de Potencial)</h2>
+                    <p>
+                        El voltaje es la diferencia de potencial eléctrico entre dos puntos. Es lo que impulsa a las cargas eléctricas a moverse en un circuito, similar a cómo la presión impulsa el agua a través de una tubería. Se mide en voltios (V). Un voltio es la cantidad de energía necesaria para mover un coulomb de carga a través de un circuito.
+                    </p>
+                    <img src="images/3.png" alt="Voltaje">
+                </div>
+
+                <div class="concepto">
+                    <h2>Resistencia Eléctrica</h2>
+                    <p>
+                        La resistencia eléctrica es la oposición al flujo de corriente en un material. Se mide en ohmios (Ω). Un material con alta resistencia dificulta el paso de la corriente, mientras que un material con baja resistencia permite que la corriente fluya fácilmente. La resistencia depende del material, su tamaño y temperatura.
+                    </p>
+                    <img src="images/4.png" alt="Resistencia Eléctrica">
+                </div>
+
+                <div class="concepto">
+                    <h2>Potencia Eléctrica</h2>
+                    <p>
+                        La potencia eléctrica es la cantidad de energía que se consume o se produce en un dispositivo eléctrico por unidad de tiempo. Se mide en vatios (W). Un vatio es la cantidad de energía usada por un dispositivo cuando una corriente de un amperio fluye con un voltaje de un voltio. La fórmula básica es: P = V × I donde P es la potencia, V es el voltaje, e I es la corriente.
+                    </p>
+                    <img src="images/5.png" alt="Potencia Eléctrica">
+                </div>
+
+                <div class="concepto">
+                    <h2>Energía Eléctrica</h2>
+                    <p>
+                        La energía eléctrica es la capacidad de realizar trabajo mediante la electricidad. Se mide en julios (J) o en kilovatios-hora (kWh) para aplicaciones prácticas. La energía eléctrica se utiliza para alimentar dispositivos como luces, motores y electrodomésticos. La fórmula para calcular la energía es: E = P × t donde E es la energía, P es la potencia, y t es el tiempo.
+                    </p>
+                    <img src="images/6.png" alt="Energía Eléctrica">
+                </div>
+
+                <p>Estos conceptos básicos forman la base de la comprensión de la electrónica y los circuitos eléctricos.</p>
+            </section>
+
+            <!-- Sección para mostrar el PDF -->
+            <section class="text-center my-4">
+                <h2>Documento PDF</h2>
+                <embed src="images/Presentación1-1.pptx.pdf" type="application/pdf" width="100%" height="600px">
             </section>
         </main>
     </div>
-    <script src="script.js"></script>
 </body>
 </html>
