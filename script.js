@@ -20,8 +20,8 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     const errorMessage = document.getElementById('errorMessage');
     
     const users = [
-        { username: '115', password: '12345' },
-        { username: '152', password: '12345' }
+        { username: 'user1', password: 'password1' },
+        { username: 'user2', password: 'password2' }
     ];
     
     const user = users.find(user => user.username === username && user.password === password);
