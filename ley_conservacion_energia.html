@@ -6,6 +6,177 @@
     <title>Ley de la Conservación de la Energía</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            animation: fadeInDown 1s ease-out;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+
+        .nav-link {
+            color: #007bff !important;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .nav-link:hover {
+            color: #0056b3 !important;
+        }
+
+        main {
+            animation: fadeIn 1s ease-out;
+        }
+
+        section {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin-bottom: 40px;
+            animation: zoomIn 0.5s ease-out;
+        }
+
+        h2, h3 {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        strong {
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-out;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Additional Animations */
+        @keyframes slideInLeft {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        /* Styling for Specific Sections */
+        .ejemplo-circuito {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .ejemplo-circuito img {
+            width: 70%;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .resumen {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 40px;
+            text-align: left;
+        }
+
+        .resumen ul {
+            margin-left: 40px;
+        }
+
+        .resumen li {
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -19,46 +190,53 @@
             <section class="my-4">
                 <h2>Ley de la Conservación de la Energía</h2>
                 <p>La ley de la conservación de la energía establece que la energía no se crea ni se destruye, solo se transforma de una forma a otra...</p>
-                <!-- Más información detallada aquí -->
-                <h1>La Ley de la Conservación de la Energía</h1>
 
-                <h2>Definición</h2>
-                <p>
-                    La ley de la conservación de la energía establece que la energía no se crea ni se destruye, solo se transforma de una forma a otra. Esto significa que la cantidad total de energía en un sistema aislado siempre permanece constante.
-                </p>
+                <section class="definicion" style="animation: slideInLeft 1s ease-out;">
+                    <h2>Definición</h2>
+                    <p>
+                        La ley de la conservación de la energía establece que la energía no se crea ni se destruye, solo se transforma de una forma a otra. Esto significa que la cantidad total de energía en un sistema aislado siempre permanece constante.
+                    </p>
+                </section>
             
-                <h2>Ejemplo Básico</h2>
-                <p>
-                    Imagina que tienes una pelota en lo alto de una colina. La pelota tiene energía potencial debido a su posición elevada. Si la pelota rueda colina abajo, su energía potencial se convierte en energía cinética (la energía del movimiento). Al final, la energía total (potencial + cinética) de la pelota es la misma, solo ha cambiado de forma.
-                </p>
+                <section class="ejemplo-basico" style="animation: slideInRight 1s ease-out;">
+                    <h2>Ejemplo Básico</h2>
+                    <p>
+                        Imagina que tienes una pelota en lo alto de una colina. La pelota tiene energía potencial debido a su posición elevada. Si la pelota rueda colina abajo, su energía potencial se convierte en energía cinética (la energía del movimiento). Al final, la energía total (potencial + cinética) de la pelota es la misma, solo ha cambiado de forma.
+                    </p>
+                </section>
             
-                <h2>Aplicación en Electricidad</h2>
-                <p>
-                    En un circuito eléctrico, la energía puede transformarse entre diferentes formas, pero la cantidad total de energía se mantiene constante. Por ejemplo:
-                </p>
-                
-                    <strong>Batería a Luz:</strong> Una batería convierte energía química en energía eléctrica. Esta energía eléctrica puede alimentar una bombilla, que convierte la energía eléctrica en luz y calor.</li>
-                    <br>
-                    <strong>Motor Eléctrico:</strong> La energía eléctrica se convierte en energía mecánica para hacer funcionar un motor.</li>
-                
+                <section class="aplicacion" style="animation: slideInLeft 1s ease-out;">
+                    <h2>Aplicación en Electricidad</h2>
+                    <p>
+                        En un circuito eléctrico, la energía puede transformarse entre diferentes formas, pero la cantidad total de energía se mantiene constante. Por ejemplo:
+                    </p>
+                    <ul>
+                        <li><strong>Batería a Luz:</strong> Una batería convierte energía química en energía eléctrica. Esta energía eléctrica puede alimentar una bombilla, que convierte la energía eléctrica en luz y calor.</li>
+                        <li><strong>Motor Eléctrico:</strong> La energía eléctrica se convierte en energía mecánica para hacer funcionar un motor.</li>
+                    </ul>
+                </section>
             
-                <h2>Ejemplo en un Circuito</h2>
-                <p>
-                    Imagina un circuito simple con una batería y una resistencia. La batería proporciona energía eléctrica. Al pasar la corriente por la resistencia, parte de esta energía se convierte en calor debido a la resistencia. La energía eléctrica que suministra la batería es igual a la energía disipada en la resistencia.
-                </p>
+                <section class="ejemplo-circuito" style="animation: slideInRight 1s ease-out;">
+                    <h2>Ejemplo en un Circuito</h2>
+                    <p>
+                        Imagina un circuito simple con una batería y una resistencia. La batería proporciona energía eléctrica. Al pasar la corriente por la resistencia, parte de esta energía se convierte en calor debido a la resistencia. La energía eléctrica que suministra la batería es igual a la energía disipada en la resistencia.
+                    </p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ_iZQ9p8F7m-hlXCb7vUTXla5mUVoaj1VOw&s" alt="Ejemplo de Circuito">
+                </section>
             
-                <h2>Resumen</h2>
-                
-                    <strong>Principio:</strong> La energía total en un sistema aislado siempre se conserva.</li>
-                    <strong>Transformaciones:</strong> La energía puede cambiar de una forma a otra (química, eléctrica, mecánica, térmica, etc.), pero la cantidad total de energía permanece constante.</li>
-                    <br>
-                    <strong>Ejemplos:</strong>
-                        <ul>
-                            <li>En una pelota rodando colina abajo, la energía potencial se convierte en energía cinética.</li>
-                            <li>En un circuito, la energía eléctrica de una batería se convierte en luz y calor en una bombilla.</li>
-                        </ul>
-                    </li>
-                
+                <section class="resumen" style="animation: slideInLeft 1s ease-out;">
+                    <h2>Resumen</h2>
+                    <ul>
+                        <li><strong>Principio:</strong> La energía total en un sistema aislado siempre se conserva.</li>
+                        <li><strong>Transformaciones:</strong> La energía puede cambiar de una forma a otra (química, eléctrica, mecánica, térmica, etc.), pero la cantidad total de energía permanece constante.</li>
+                        <li><strong>Ejemplos:</strong>
+                            <ul>
+                                <li>En una pelota rodando colina abajo, la energía potencial se convierte en energía cinética.</li>
+                                <li>En un circuito, la energía eléctrica de una batería se convierte en luz y calor en una bombilla.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
             
                 <p>La ley de la conservación de la energía es un principio fundamental en física y en todas las ciencias naturales, y es crucial para entender cómo funcionan los sistemas eléctricos y electrónicos.</p>
             </section>
